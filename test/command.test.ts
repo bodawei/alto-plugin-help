@@ -1,6 +1,6 @@
-import {Command as Base, flags} from '@oclif/command'
 import * as Config from '@oclif/config'
 import {expect, test as base} from '@oclif/test'
+import {Command as Base, flags} from 'alto-command'
 import stripAnsi = require('strip-ansi')
 
 const g: any = global

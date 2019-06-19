@@ -1,7 +1,7 @@
 import {expect, test} from '@oclif/test'
 
 const VERSION = require('../../package.json').version
-const UA = `@oclif/plugin-help/${VERSION} ${process.platform}-${process.arch} node-${process.version}`
+const UA = `alto-plugin-help/${VERSION} ${process.platform}-${process.arch} node-${process.version}`
 
 describe('help command', () => {
   test
@@ -20,10 +20,10 @@ EXAMPLE
   $ oclif plugins
 
 COMMANDS
-  plugins:install    installs a plugin into the CLI
-  plugins:link       links a plugin into the CLI for development
-  plugins:uninstall  removes a plugin from the CLI
-  plugins:update     update installed plugins
+  plugins install    installs a plugin into the CLI
+  plugins link       links a plugin into the CLI for development
+  plugins uninstall  removes a plugin from the CLI
+  plugins update     update installed plugins
 
 `)
     })
@@ -51,7 +51,7 @@ OPTIONS
     .stdout()
     .command(['help'])
     .it('shows root help', ctx => {
-      expect(ctx.stdout).to.equal(`standard help for oclif
+      expect(ctx.stdout).to.equal(`help for alto-clif
 
 VERSION
   ${UA}
