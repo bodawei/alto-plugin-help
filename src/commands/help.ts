@@ -1,4 +1,4 @@
-import {Command, flags} from '@oclif/command'
+import {Command, flags} from 'alto-command'
 
 import Help from '..'
 

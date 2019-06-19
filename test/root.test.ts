@@ -6,7 +6,7 @@ g.columns = 80
 import Help from '../src'
 
 const VERSION = require('../package.json').version
-const UA = `@oclif/plugin-help/${VERSION} ${process.platform}-${process.arch} node-${process.version}`
+const UA = `alto-plugin-help/${VERSION} ${process.platform}-${process.arch} node-${process.version}`
 
 const test = base
 .loadConfig()
@@ -25,7 +25,7 @@ const test = base
 describe('root help', () => {
   test
     .rootHelp()
-    .it(ctx => expect(ctx.commandHelp).to.equal(`standard help for oclif
+    .it(ctx => expect(ctx.commandHelp).to.equal(`help for alto-clif
 
 VERSION
   ${UA}

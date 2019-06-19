@@ -101,7 +101,7 @@ export default class Help {
       title,
       [
         bold('USAGE'),
-        indent(wrap(`$ ${this.config.bin} ${topic.name}:COMMAND`, this.opts.maxWidth - 2, {trim: false, hard: true}), 2),
+        indent(wrap(`$ ${this.config.bin} ${topic.name.replace(/:/g, ' ')} COMMAND`, this.opts.maxWidth - 2, {trim: false, hard: true}), 2),
       ].join('\n'),
       description && ([
         bold('DESCRIPTION'),
@@ -120,7 +120,7 @@ export default class Help {
   topics(topics: Config.Topic[]): string | undefined {
     if (!topics.length) return
     let body = renderList(topics.map(c => [
-      c.name,
+      c.name.replace(/:/g, ' '),
       c.description && this.render(c.description.split('\n')[0])
     ]), {
       spacer: '\n',
