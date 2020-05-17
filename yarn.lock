@@ -440,6 +440,21 @@ alto-command@^0:
     debug "^4.1.1"
     semver "^5.6.0"
 
+alto-plugin-help@^0:
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/alto-plugin-help/-/alto-plugin-help-0.9.2.tgz#3355eda70727470e6e2dc47acacc2cf4f6c87eb1"
+  integrity sha512-teECAgAfi+P8/1XJf8g+7O40NPi4ZcnmBBrk8E5csvkrnX1ME8N2juczgRuHpWDGcabjpwNCm3SeP3LUHwFg6w==
+  dependencies:
+    "@oclif/config" "^1.15.1"
+    alto-command "^0"
+    chalk "^2.4.1"
+    indent-string "^4.0.0"
+    lodash.template "^4.4.0"
+    string-width "^3.0.0"
+    strip-ansi "^5.0.0"
+    widest-line "^2.0.1"
+    wrap-ansi "^4.0.0"
+
 ansi-escapes@^3.1.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
