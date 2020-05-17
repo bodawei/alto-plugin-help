@@ -16,7 +16,7 @@ describe('util', () => {
     test
     .it('defaults to the class exported', () => {
       // eslint-disable-next-line node/no-extraneous-require
-      const defaultHelpClass = require('@oclif/plugin-help').default
+      const defaultHelpClass = require('alto-plugin-help').default
       delete config.pjson.oclif.helpClass
 
       expect(defaultHelpClass).not.be.undefined

@@ -63,7 +63,7 @@ function extractClass(exported: any): HelpBaseDerived {
   return exported && exported.default ? exported.default : exported
 }
 
-export function getHelpClass(config: IConfig, defaultClass = '@oclif/plugin-help'): HelpBaseDerived {
+export function getHelpClass(config: IConfig, defaultClass = 'alto-plugin-help'): HelpBaseDerived {
   const pjson = config.pjson
   const configuredClass = pjson && pjson.oclif &&  pjson.oclif.helpClass
 
